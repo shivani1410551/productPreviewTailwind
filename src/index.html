@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+    <link href="./output.css" rel="stylesheet" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="text-sm font-primary h-screen w-full bg-cream">
+    <div
+      class="hero-container md:flex md:justify-center md:items-center h-full"
+    >
+      <main
+        class="mx-auto px-4 grid xs:mx-2 xs:my-6 md:grid-cols-2 xxs:mx-2 xxs:my-6 sm:my-6 sm:mx-2 md:h-[500px] md:w-[700px]"
+      >
+        <div
+          class="hero-img-area overflow-hidden xs:rounded-t-lg xxs:rounded-t-lg sm:rounded-t-lg md:rounded-l-lg md:rounded-r-none"
+        >
+          <img
+            src="../assets/images/image-product-mobile.jpg"
+            alt="mobile img"
+            class="md:hidden lg:hidden xl:hidden"
+          />
+          <img
+            src="../assets/images/image-product-desktop.jpg"
+            alt="desktop img"
+            class="xxs:hidden xs:hidden sm:hidden md:block md:bg-cover md:h-full"
+          />
+        </div>
+        <div
+          class="hero-text-area bg-white xxs:rounded-b-lg xs:rounded-b-lg sm:rounded-b-lg xs:p-6 sm:p-6 xxs:p-6 xxs:space-y-[1rem] xs:space-y-[1rem] sm:space-y-[1rem] md:rounded-r-lg md:rounded-l-none md:space-y-[1.2rem] md:grid md:justify-center md:items-center"
+        >
+          <h1
+            class="font-primary uppercase tracking-[0.25rem] text-darkgrayishblue font-medium"
+          >
+            Perfume
+          </h1>
+          <h2
+            class="font-bold font-secondary xs:text-2xl xs:leading-6 xxs:text-2xl xxs:leading-6 sm:leading-6 sm:text-2xl text-verydarkblue"
+          >
+            Gabrielle Essence Eau De Parfum
+          </h2>
+          <p
+            class="text-darkgrayishblue font-medium xs:text-[0.95rem] sm:text-[0.95rem] xxs:text-[0.95rem] xxs:leading-[1.35rem] xs:leading-[1.35rem] sm:xs:leading-[1.35rem]"
+          >
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="pricing-abox flex items-center xs:pb-4 sm:pb-4 xxs:pb-4">
+            <h3
+              class="xs:pr-6 sm:pr-6 xxs:pr-6 font-secondary text-3xl text-darkcyan font-bold"
+            >
+              $149.99
+            </h3>
+            <p class="line-through text-darkgrayishblue">$169.99</p>
+          </div>
+          <a
+            href="#"
+            class="bg-darkcyan text-white block text-center xs:py-4 xxs:p-4 sm:p-4 rounded-lg font-medium text-base md:p-2 hover:bg-verydarkblue transition-colors"
+          >
+            <img
+              src="../assets/images/icon-cart.svg"
+              alt="cart icon"
+              class="inline-block pr-2 h-4"
+            />
+            Add to Cart</a
+          >
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
+
+<!-- md:grid md:content-center md:justify-center -->
